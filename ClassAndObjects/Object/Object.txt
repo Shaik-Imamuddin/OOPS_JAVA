@@ -1,0 +1,12 @@
+Object:
+object is a real world entity
+it is also known as instance of a class
+instance is nothing but a way to access the properites of a class
+
+->we can create single object for a class
+->we can create Multiple object for a class
+->we can create n no.of object for a class
+    ->creating n no.of pbjects is nothing but Array of objects
+
+Syntax:
+    ClassName objectName = new Constructor();

@@ -1,0 +1,49 @@
+There are 3 Types of Access Specifier
+
+public      -> we can Access any where throughout the program
+
+protected   ->we can Access throughout the class(within the class)
+	    ->throughout the package (within the package)
+
+	    ->We can also access in another package but we need to inherit the class which contains the protected method
+
+	    ->which means we can also access the protected method in a child class even though the method is in another package
+
+		->before inheriting we need to import the package			
+
+
+		Commands to tun the protected file
+		
+		->make sure you are in protected directory
+		
+		javac PackageA\Student.java	->Compiles the class in the PackageA folder
+
+		javac -cp . PackageB\Main.java	->Compiles a class that depends on another package
+
+		java -cp . PackageB.Main	->Runs the Main class from its fully qualified name
+
+		
+		->Note: Run the same commands for Default too
+			Make sure you are in default directory
+		
+private     -> we can Access only with in the class , 
+                Outside of a class we can't Access a private Method
+
+
+
+If you are not declared the method with any of the 3 Access Specifiers 
+it will be Automatically declared with default Access Specifier
+
+
+Default     ->we can Access throughout the class(within the class)
+	    ->throughout the package (within the package)
+	    ->we can't Access the method out side the package with default Access Specifier	
+	
+Kindly refer the following table
+
+Modifier	Same Class	  Same Package	   Subclass (other pkg)	     Other Packages
+--------------------------------------------------------------------------------------------
+public	    	Accessible	   Accessible	      Accessible	       Accessible
+protected   	Accessible	   Accessible	      Accessible	     Not Accessible
+default	    	Accessible	   Accessible	    Not Accessible	     Not Accessible
+private	    	Accessible	 Not Accessible	    Not Accessible           Not Accessible
