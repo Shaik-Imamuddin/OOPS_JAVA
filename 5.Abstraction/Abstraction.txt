@@ -1,0 +1,46 @@
+Abstraction:
+
+generally Abstraction is used to say hiding of unwanted data.
+
+but practically abstract is a class which is used to hide the data.
+
+we need to use a keyword called abstract to declare an abstract class
+
+Syntax:
+
+abstract class classname{
+    //we can declare the variables
+    //we can create abstract methods and non-abstract methods in abstract class
+    //we can just declare abstract method , but we can't define the method
+}
+
+
+//when ever we created an abstract class 
+// we need to generate the object to the child class of our abstract class 
+
+
+Note:
+
+we can create non abstract methods inside the abstract class
+
+->since it is not 100% abstraction implementation
+
+we can't create object to an abstract class
+
+To overcome this there is a concept called interfaces
+
+
+Interfaces:
+
+To overcome the dis-advantage of abstraction , we use interfaces.
+
+->interface class will have 100% abstraction,
+	which means we can't Create non-abstract methods inside the interface class
+
+->To create an interface, we need to use interface keyword ,
+	we need to use implements keyword to inherit it to the child class
+
+->when defining the abstract method in child class
+	we must have to specify it with public access
+
+->we can also implement multiple inheritance through interfaces by implementing morethen one interface at a time.
